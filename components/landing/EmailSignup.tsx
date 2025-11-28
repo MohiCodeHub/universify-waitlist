@@ -4,7 +4,6 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Checkbox } from "@/components/ui/checkbox"
 import { useToast } from "@/hooks/use-toast"
 import { Loader2 } from "lucide-react"
 import { submitEmail } from "@/app/actions/submit-email"
@@ -12,14 +11,12 @@ import { submitEmail } from "@/app/actions/submit-email"
 interface EmailSignupProps {
   placeholder?: string
   buttonText?: string
-  showTipsCheckbox?: boolean
   className?: string
 }
 
 export function EmailSignup({
   placeholder = "Enter your email",
   buttonText = "Join Waitlist",
-  showTipsCheckbox = false,
   className,
 }: EmailSignupProps) {
   const [isLoading, setIsLoading] = useState(false)
@@ -71,17 +68,6 @@ export function EmailSignup({
           {buttonText}
         </Button>
       </div>
-      {showTipsCheckbox && (
-        <div className="flex items-center space-x-2">
-            <Checkbox id="tips" defaultChecked />
-            <label
-              htmlFor="tips"
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-muted-foreground"
-            >
-              Send me UCAS tips while I wait
-            </label>
-        </div>
-      )}
     </form>
   )
 }

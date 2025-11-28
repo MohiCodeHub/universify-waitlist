@@ -8,7 +8,7 @@ export function Hero() {
           Get Into Your Dream University with <span className="text-primary">AI</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-          Personal statement feedback, university matching, and interview prep - all powered by AI trained on 100+ successful UCAS applications.
+          Personal statement feedback, university matching, and interview prep - all powered by insights from 100+ successful UCAS applications.
         </p>
         
         <div className="w-full max-w-md flex flex-col items-center space-y-4">

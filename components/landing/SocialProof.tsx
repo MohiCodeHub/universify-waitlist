@@ -18,7 +18,7 @@ export function SocialProof() {
               <FileText className="h-6 w-6 text-secondary" />
             </div>
             <h3 className="text-3xl font-bold text-slate-900">100+</h3>
-            <p className="text-sm text-muted-foreground font-medium">Successful essays learned</p>
+            <p className="text-sm text-muted-foreground font-medium">Successful essays analyzed</p>
           </div>
 
           <div className="flex flex-col items-center text-center space-y-2 p-4 bg-white rounded-lg shadow-sm border border-slate-100">

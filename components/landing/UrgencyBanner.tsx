@@ -8,7 +8,8 @@ export function UrgencyBanner() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const deadline = new Date("2026-01-31T18:00:00") // 6 PM UK time usually
+      // UCAS Deadline: Jan 31, 2026 at 18:00 UK Time (GMT/UTC+0 in Jan)
+      const deadline = new Date("2026-01-31T18:00:00Z") 
       const now = new Date()
       const difference = deadline.getTime() - now.getTime()
 

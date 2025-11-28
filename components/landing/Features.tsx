@@ -33,11 +33,11 @@ export function Features() {
               <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
                 <Library className="h-6 w-6 text-secondary" />
               </div>
-              <CardTitle className="text-2xl">Trained on Real Success Stories</CardTitle>
+              <CardTitle className="text-2xl">Powered by Real Success Stories</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Our AI learned from actual personal statements that got students into top universities. Not generic advice - specific patterns from Computer Science students who got into Imperial, Medicine applicants accepted to Cambridge.
+                Our AI is guided by analysis of actual personal statements that got students into top universities. Not generic advice - specific patterns from Computer Science students who got into Imperial, Medicine applicants accepted to Cambridge.
               </p>
               <p className="text-secondary font-semibold">Learn from students who actually got in</p>
             </CardContent>
