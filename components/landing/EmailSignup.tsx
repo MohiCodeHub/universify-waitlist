@@ -35,6 +35,12 @@ export function EmailSignup({
         description: "We'll notify you when Universify launches.",
       })
       reset()
+    } else if (result.message === "You're already on the list!") {
+      toast({
+        title: "You're already on the list! 🎉",
+        description: "We'll notify you when Universify launches.",
+      })
+      reset()
     } else {
       toast({
         title: "Something went wrong",
