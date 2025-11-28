@@ -31,31 +31,31 @@ export function UrgencyBanner() {
   return (
     <section className="w-full py-16 bg-primary text-white">
       <div className="container px-4 md:px-6 mx-auto flex flex-col items-center text-center space-y-8">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">UCAS Deadline: January 31, 2026</h2>
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tighter animate-fade-in-down">UCAS Deadline: January 31, 2026</h2>
         
         <div className="grid grid-cols-3 gap-4 md:gap-8">
-          <div className="flex flex-col items-center p-4 bg-white/10 rounded-lg backdrop-blur-sm min-w-[80px] md:min-w-[100px]">
+          <div className="flex flex-col items-center p-4 bg-white/10 rounded-lg backdrop-blur-sm min-w-[80px] md:min-w-[100px] hover:scale-110 hover:bg-white/20 transition-all duration-300 animate-scale-in [animation-delay:0.1s] opacity-0 [animation-fill-mode:forwards]">
             <span className="text-3xl md:text-6xl font-bold">{timeLeft.days}</span>
             <span className="text-xs md:text-sm font-medium uppercase tracking-widest opacity-80 mt-2">Days</span>
           </div>
-          <div className="flex flex-col items-center p-4 bg-white/10 rounded-lg backdrop-blur-sm min-w-[80px] md:min-w-[100px]">
+          <div className="flex flex-col items-center p-4 bg-white/10 rounded-lg backdrop-blur-sm min-w-[80px] md:min-w-[100px] hover:scale-110 hover:bg-white/20 transition-all duration-300 animate-scale-in [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
             <span className="text-3xl md:text-6xl font-bold">{timeLeft.hours}</span>
             <span className="text-xs md:text-sm font-medium uppercase tracking-widest opacity-80 mt-2">Hours</span>
           </div>
-          <div className="flex flex-col items-center p-4 bg-white/10 rounded-lg backdrop-blur-sm min-w-[80px] md:min-w-[100px]">
+          <div className="flex flex-col items-center p-4 bg-white/10 rounded-lg backdrop-blur-sm min-w-[80px] md:min-w-[100px] hover:scale-110 hover:bg-white/20 transition-all duration-300 animate-scale-in [animation-delay:0.3s] opacity-0 [animation-fill-mode:forwards]">
             <span className="text-3xl md:text-6xl font-bold">{timeLeft.minutes}</span>
             <span className="text-xs md:text-sm font-medium uppercase tracking-widest opacity-80 mt-2">Mins</span>
           </div>
         </div>
 
-        <p className="text-lg md:text-xl max-w-2xl opacity-90">
+        <p className="text-lg md:text-xl max-w-2xl animate-fade-in-up [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards]">
           That&apos;s coming up fast. Most students spend 20+ hours on their personal statement alone. Don&apos;t leave it until the last minute.
         </p>
 
         <Button 
           size="lg" 
           variant="secondary" 
-          className="h-14 px-8 text-lg font-bold bg-white text-primary hover:bg-slate-100 hover:text-primary"
+          className="h-14 px-8 text-lg font-bold bg-white text-primary hover:bg-slate-100 hover:text-primary hover:scale-105 transition-all duration-300 animate-fade-in-up [animation-delay:0.5s] opacity-0 [animation-fill-mode:forwards]"
           onClick={() => document.getElementById('hero-signup')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Join the Waitlist

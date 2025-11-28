@@ -4,7 +4,7 @@ export function HowItWorks() {
   return (
     <section className="w-full py-20 bg-white overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto flex flex-col items-center space-y-16">
-        <div className="text-center space-y-4 max-w-3xl z-10">
+        <div className="text-center space-y-4 max-w-3xl z-10 animate-fade-in-down">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-slate-900">How Universify Works</h2>
           <p className="text-xl text-muted-foreground">Three simple steps to your best UCAS application</p>
         </div>
@@ -16,7 +16,7 @@ export function HowItWorks() {
            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200 md:hidden"></div>
 
            {/* Step 1 */}
-           <div className="relative w-full flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24 group">
+           <div className="relative w-full flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24 group animate-fade-in-up [animation-delay:0.1s] opacity-0 [animation-fill-mode:forwards]">
              {/* Left Content (Text) */}
              <div className="w-full md:w-[45%] pl-16 md:pl-0 md:text-right md:pr-12 order-2 md:order-1">
                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white font-bold text-lg mb-4 shadow-md md:ml-auto md:hidden absolute left-1 top-0">
@@ -47,7 +47,7 @@ export function HowItWorks() {
 
 
            {/* Step 2 */}
-           <div className="relative w-full flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24 group">
+           <div className="relative w-full flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24 group animate-fade-in-up [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
              {/* Left Content (Empty for Step 2) */}
              <div className="w-full md:w-[45%] order-2 md:order-1 hidden md:block"></div>
 
@@ -75,7 +75,7 @@ export function HowItWorks() {
 
 
            {/* Step 3 */}
-           <div className="relative w-full flex flex-col md:flex-row items-center md:justify-between group">
+           <div className="relative w-full flex flex-col md:flex-row items-center md:justify-between group animate-fade-in-up [animation-delay:0.3s] opacity-0 [animation-fill-mode:forwards]">
              {/* Left Content (Text) */}
              <div className="w-full md:w-[45%] pl-16 md:pl-0 md:text-right md:pr-12 order-2 md:order-1">
                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white font-bold text-lg mb-4 shadow-md md:ml-auto md:hidden absolute left-1 top-0">

@@ -5,16 +5,16 @@ export function Features() {
   return (
     <section className="w-full py-20 bg-slate-50">
       <div className="container px-4 md:px-6 mx-auto space-y-12">
-        <div className="text-center space-y-4 max-w-3xl mx-auto">
+        <div className="text-center space-y-4 max-w-3xl mx-auto animate-fade-in-down">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-slate-900">Everything You Need for UCAS</h2>
           <p className="text-xl text-muted-foreground">Built by UCL students who remember how stressful applications were</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Feature 1 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-none shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 animate-fade-in-up [animation-delay:0.1s] opacity-0 [animation-fill-mode:forwards]">
             <CardHeader className="space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <FileCheck className="h-6 w-6 text-primary" />
               </div>
               <CardTitle className="text-2xl">Smart Statement Feedback</CardTitle>
@@ -28,9 +28,9 @@ export function Features() {
           </Card>
 
           {/* Feature 2 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-none shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 animate-fade-in-up [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
             <CardHeader className="space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <Library className="h-6 w-6 text-secondary" />
               </div>
               <CardTitle className="text-2xl">Powered by Real Success Stories</CardTitle>
@@ -44,9 +44,9 @@ export function Features() {
           </Card>
 
           {/* Feature 3 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-none shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 animate-fade-in-up [animation-delay:0.3s] opacity-0 [animation-fill-mode:forwards]">
             <CardHeader className="space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <Mic className="h-6 w-6 text-purple-500" />
               </div>
               <CardTitle className="text-2xl">Practice Interviews Out Loud</CardTitle>
@@ -60,9 +60,9 @@ export function Features() {
           </Card>
 
           {/* Feature 4 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-none shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 animate-fade-in-up [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards]">
             <CardHeader className="space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <GraduationCap className="h-6 w-6 text-blue-500" />
               </div>
               <CardTitle className="text-2xl">Find Your Perfect Universities</CardTitle>
