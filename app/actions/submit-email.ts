@@ -10,6 +10,11 @@ export async function submitEmail(email: string) {
 
     if (error) {
       console.error('Supabase error:', error)
+      
+      if (error.code === '23505') { // PostgreSQL unique constraint violation code
+        return { success: false, message: "You're already on the list!" }
+      }
+      
       return { success: false, message: error.message }
     }
 

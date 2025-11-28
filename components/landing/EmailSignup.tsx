@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { useToast } from "@/hooks/use-toast"
 import { Loader2 } from "lucide-react"
 import { submitEmail } from "@/app/actions/submit-email"
+import { Turnstile } from "@marsidev/react-turnstile"
 
 interface EmailSignupProps {
   placeholder?: string
@@ -68,6 +69,10 @@ export function EmailSignup({
           {buttonText}
         </Button>
       </div>
+      <Turnstile 
+        siteKey="0x4AAAAAACDZOboHYckodq9W" 
+        options={{ size: 'invisible' }}
+      />
     </form>
   )
 }
