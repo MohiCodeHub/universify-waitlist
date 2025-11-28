@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useToast } from "@/hooks/use-toast"
 import { Loader2 } from "lucide-react"
+import { submitEmail } from "@/app/actions/submit-email"
 
 interface EmailSignupProps {
   placeholder?: string
@@ -27,15 +28,24 @@ export function EmailSignup({
 
   const onSubmit = async (data: { email: string }) => {
     setIsLoading(true)
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    console.log("Email submitted:", data.email)
-    toast({
-      title: "You're on the list! 🎉",
-      description: "We'll notify you when Universify launches.",
-    })
+    
+    const result = await submitEmail(data.email)
+
+    if (result.success) {
+      toast({
+        title: "You're on the list! 🎉",
+        description: "We'll notify you when Universify launches.",
+      })
+      reset()
+    } else {
+      toast({
+        title: "Something went wrong",
+        description: result.message || "Please try again later.",
+        variant: "destructive",
+      })
+    }
+
     setIsLoading(false)
-    reset()
   }
 
   return (
